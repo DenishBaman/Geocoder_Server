@@ -1,15 +1,13 @@
-#Geocoder Server
+# Geocoder Server
 A basic development of geocoding services using python libraries with HTTP interface and JSON data serialization. 
 
-##Dependency installation
+## Dependency installation
 
 1. Package install
-
 Install geocoder,
-
-	```
-	$ sudo pip install geocoder
-	```	
+```
+$ sudo pip install geocoder
+```	
 
 2. Python web framework
 The flask microframwork is used to build web service.
