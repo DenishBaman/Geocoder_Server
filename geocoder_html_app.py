@@ -13,7 +13,7 @@ def address_querybox():
 def address_querybox_text():
 	text = request.form['text']
 	result = addressToLatLng(text)
-	return result.replace("\n","<br />")
-	#to_render = addressToLatLng.replace("\n","<br />")
+	result = "<div style=\"text-align:center\";>" + "<br />"+ result.replace("\n","<br />") + "</div>"
+	return result
 if __name__ == '__main__':
     app.run(debug=True)

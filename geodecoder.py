@@ -17,9 +17,9 @@ def addressToLatLng(address_query):
 	[results for results in geo_coder]
 
 	parsed_result = ""
-	parsed_result = parsed_result + "geocoding API: " + geo_coding_services[service_ct] + "\n"
-	parsed_result = parsed_result + "\n location: " + results.address + "\n"
-	parsed_result = parsed_result + "\n latitude: %0.8f " % results.latlng[0] + "\n"
-	parsed_result = parsed_result + "longitude: %0.8f " % results.latlng[1] + "\n"
+	parsed_result = parsed_result + "<h3>Geocoding API:  " + geo_coding_services[service_ct] + "\n"
+	parsed_result = parsed_result + "\n Location: " + results.address + "\n"
+	parsed_result = parsed_result + "\n Latitude: %0.8f " % results.latlng[0] + "\n"
+	parsed_result = parsed_result + "Longitude: %0.8f " % results.latlng[1] + "\n<h3>"
 
 	return parsed_result
