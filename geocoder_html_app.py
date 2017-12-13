@@ -12,7 +12,8 @@ def address_querybox():
 @app.route('/', methods = ['POST'])
 def address_querybox_text():
 	text = request.form['text']
-	return addressToLatLng(text)
-
+	result = addressToLatLng(text)
+	return result.replace("\n","<br />")
+	#to_render = addressToLatLng.replace("\n","<br />")
 if __name__ == '__main__':
     app.run(debug=True)
